@@ -26,6 +26,7 @@
 }
 .select{
     padding-bottom: 1em;
+    margin-bottom: 1em;
     border-bottom: 1px solid gray;
 }
 .select label {
@@ -35,7 +36,7 @@
 .select select {
     border: none;
   background: transparent;
-  width: 100%;
+  width: 80%;
 }
 .discription h1{
     font-size: 0.65em;
@@ -73,7 +74,6 @@ li{
         padding: 3em;
     }
     .card{
-        text-align: center;
         width: 100%;
         position: fixed;
         bottom: 0px;
@@ -88,7 +88,6 @@ li{
         background-color: rgb(44, 44, 85);
         border: none;
         text-align: center;
-        left: 0px;
         padding: 10px;
         padding-bottom: 15px;
         padding-top: 15px;
