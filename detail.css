@@ -1,0 +1,98 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2 auto);
+  padding-left: 5em;
+  padding-right: 5em;
+}
+.container img {
+  grid-area: 1/1/2/2;
+  object-fit: cover;
+  width: 100%;
+}
+.info {
+  grid-area: 1/2/2/3;
+  padding-left: 5em;
+}
+.item-name {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+.item-price {
+  font-size: 0.8em;
+  color: gray;
+  padding-bottom: 2.5em;
+  border-bottom: 1px solid gray;
+}
+.select{
+    padding-bottom: 1em;
+    border-bottom: 1px solid gray;
+}
+.select label {
+  font-size: 0.7em;
+  color: gray;
+}
+.select select {
+    border: none;
+  background: transparent;
+  width: 100%;
+}
+.discription h1{
+    font-size: 0.65em;
+}
+.discription p{
+    font-size: 0.65em;
+    color: gray;
+    line-height: 1.6em;
+}
+li{
+    font-size: 0.7em;
+    color: gray;
+    padding: 0.1em;
+}
+.add-to-cart {
+    font-size: 0.7em;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+@media screen and (max-width: 500px){
+    body{
+        padding-left: 2px;
+    }
+    .container{
+        display: inline-block;
+        padding: 0px;
+        margin: auto;   
+    }
+    .info {
+        padding: 3em;
+    }
+    .card{
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+
+    }
+
+    .add-to-cart{
+        font-size: 2em;
+        width: 100%;
+        color: white;
+        background-color: rgb(44, 44, 85);
+        border: none;
+        text-align: center;
+        left: 0px;
+        padding: 10px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+    }
+   
+}
