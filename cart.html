@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>CHECK OUT - SHOP</title>
+    <link rel="icon" type="image/ico" href="images/1871438.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p><a href="index.html">SHOP</a></p>
+      </div>
+      <div class="cart-button">
+        <a href="cart.html">
+          <i style="font-size:24px" class="fa">&#xf07a;</i>
+        </a>
+      </div>
+    </header>
+    <div class="checkout">
+      <h1>Checkout</h1>
+      <p>Shop is a demo app - form data will not be sent</p>
+    </div>
+
+    <div class="info">
+      <div class="acc-info">
+        <p>Account Information</p>
+        <form>
+          <input type="email" name="email" placeholder="Email" />
+          <br />
+          <input type="tel" name="phno" placeholder="Phone Number" />
+          <br />
+        </form>
+        <p>Shipping Address</p>
+        <form>
+          <input type="text" name="Address" placeholder="Address" />
+          <br />
+          <input type="text" name="city" placeholder="City" />
+          <div class="state-zip">
+            <input type="text" name="state" placeholder="State/Province" />
+            <input type="text" name="zip" placeholder="ZIP/Postal Code" />
+          </div>
+        </form>
+        <p>Country</p>
+        <select>
+          <option value="India">India</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+      <div class="Payment-info">
+        <p>Payment Method</p>
+        <form>
+          <input type="text" name="name" placeholder="Cardholder Name" />
+          <br />
+          <input type="text" name="name" placeholder="Card Number" />
+          <br />
+          <p>Expiry</p>
+          <div class="date">
+            <select>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="mar">Mar</option>
+              <option value="Apr">Apr</option>
+              <option value="May">May</option>
+              <option value="Jun">Jun</option>
+              <option value="Jul">Jul</option>
+              <option value="Aug">Aug</option>
+              <option value="Sep">Sep</option>
+              <option value="Oct">Oct</option>
+              <option value="Nov">Nov</option>
+              <option value="Dec">Dec</option>
+            </select>
+            <select>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+            </select>
+            <input class="cvv" type="text" name="cvv" placeholder="CVV" />
+          </div>
+        </form>
+        <div class="order-summary">
+          <p>
+            Order Summary
+          </p>
+          <div class="invoice">
+            <p>Ladies Modern Stretch Full Zip</p>
+            <p>$41.60</p>
+          </div>
+          <div class="invoice">
+            <p>
+              Total
+            </p>
+            <p>
+              $41.60
+            </p>
+          </div>
+        </div>
+        <div class="order">
+          <a class="place-order" href="#">PLACE ORDER</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
