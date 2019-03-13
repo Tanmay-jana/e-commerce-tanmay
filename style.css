@@ -20,7 +20,7 @@ body {
   right: 1em;
   top: 1em;
 }
-
+  
 .cart-button a {
   color: black;
 }
@@ -33,8 +33,19 @@ body {
   padding-right: 19em;
   padding-bottom: 1em;
 }
+
+.navigation a{
+  text-decoration: none;
+  color: black;
+
+}
+.navigation a :hover{
+  border-bottom: 2px solid black;
+  transition: all 1.5s auto;
+}
 .navigation p {
   font-size: 0.6em;
+  border-bottom: 2px solid transparent;
 }
 .men,
 .women,
@@ -49,6 +60,11 @@ body {
   height: 315px;
   width: 100%;
 }
+
+select{
+  cursor: pointer;
+}
+
 .men p,
 .women p,
 .men-t p,

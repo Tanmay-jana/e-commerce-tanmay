@@ -20,11 +20,11 @@ input{
   border-radius: 0;
   border: none;
   outline: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid gray;
   -webkit-appearance: none;
   padding-top: 1em;
   padding-bottom: 1em;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
 }
 form div {
   position: relative;
@@ -47,12 +47,20 @@ form div {
 }
 div input:focus ~ label,div input:valid ~ label {
   color: black;
-  top: -0.5em;
+  font-size: 0.8em;
+  top: 0em;
+}
+input:hover, select:hover
+{
+  border-bottom: 2px solid red;
+  position: relative;
+  transition: all 1.5s ease;
 }
 
 form div input:focus, select:focus
 {
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid blue;
+    transition: all 1s ease;
 }
 
 /* #cv{
@@ -74,7 +82,7 @@ select {
   border: none;
   background: transparent;
   width: 100%;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid gray;
   margin-top: 1em;
 }
 
