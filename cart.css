@@ -4,7 +4,9 @@
   padding-bottom: 4em;
   font-size: 15px;
 }
-
+label{
+  color: gray;
+}
 .checkout h1 {
   font-size: 1em;
 }
@@ -22,7 +24,7 @@ input{
   -webkit-appearance: none;
   padding-top: 1em;
   padding-bottom: 1em;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in;
 }
 form div {
   position: relative;
@@ -44,11 +46,13 @@ form div {
   pointer-events: none;
 }
 div input:focus ~ label,div input:valid ~ label {
+  color: black;
   top: -0.5em;
 }
-form div input:focus
+
+form div input:focus, select:focus
 {
-    border-bottom: 2px solid blue;
+    border-bottom: 1px solid blue;
 }
 
 /* #cv{
