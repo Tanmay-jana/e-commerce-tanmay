@@ -4,9 +4,7 @@
   padding-bottom: 4em;
   font-size: 15px;
 }
-[placeholder]:focus::-webkit-input-placeholder {
-    color: transparent;
-  }
+
 .checkout h1 {
   font-size: 1em;
 }
@@ -14,15 +12,60 @@
   font-size: 0.8em;
   color: gray;
 }
-input {
+input{
   width: 100%;
+  display: block;
   border-radius: 0;
   border: none;
+  outline: none;
   border-bottom: 1px solid gray;
   -webkit-appearance: none;
   padding-top: 1em;
   padding-bottom: 1em;
+  transition: all 0.2s ease;
 }
+form div {
+  position: relative;
+}
+
+.acc-info label {
+  display: block;
+  position: absolute;
+  top: 2em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.Payment-info label{
+  display: block;
+  position: absolute;
+  top: 2em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+div input:focus ~ label,div input:valid ~ label {
+  top: -0.5em;
+}
+form div input:focus
+{
+    border-bottom: 2px solid blue;
+}
+
+/* #cv{
+  position: relative;
+}
+#cv label{
+  display: block;
+  position: absolute;
+  top: 0em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+#cv input :focus  label, #cv input :valid  label{
+  position: relative;
+  top: 1em;
+} */
+
 select {
   border: none;
   background: transparent;
@@ -57,96 +100,109 @@ select {
 .date select {
   width: 50%;
 }
-.invoice{
+.invoice {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
-.invoice p{
-    font-weight: normal;
+.invoice p {
+  font-weight: normal;
 }
-.order{
-    text-align: center;
-    font-size: 1.5em;
+.order {
+  text-align: center;
+  font-size: 1.5em;
 }
-.state-zip{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 1em;
+.state-zip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1em;
 }
-.state-zip input{
-    width: 49%;
+/* .state-zip input{
+    width: 40%;
+} */
+.state-zip div {
+  width: 40%;
 }
-.date{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.date select{
-    width: 30%;
+.date select {
+  width: 30%;
+  padding: 1em;
+  padding-top: 0px;
+  margin-top: 2em;
 }
-.date .cvv{
-    padding: 0px;
-    width: 30%;
+.date > div {
+  position: relative;
+  bottom: -1.25em;
+  width: 30%;
 }
+/* .date .cvv {
+  padding: 0px;
+}
+.cvv input {
+  padding: 0px;
+} */
 .place-order {
+  text-align: center;
+  font-size: 0.7em;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 0.7em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.order-summary {
+  padding-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout {
     text-align: center;
-    font-size: 0.7em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 15px;
+  }
+  .info {
+    font-size: 13px;
+    display: flex;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .checkout {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 15px;
+  }
+  .info {
+    font-size: 13px;
     display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: 2px solid black;
-    padding: 0.7em;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
   }
-  .order-summary{
-      padding-top: 2em;
+  .order {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
   }
-
-  @media screen and (max-width: 768px){
-    .checkout {
-        text-align: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: 15px;
-      }
-      .info {
-        font-size: 13px;
-        display: flex;
-        padding-left: 1.2em;
-        padding-right: 1.2em;
-      }
+  .place-order {
+    font-size: 1em;
+    width: 100%;
+    color: white;
+    background-color: rgb(44, 44, 85);
+    border: none;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
   }
-
-  @media screen and (max-width: 600px){
-    .checkout {
-        text-align: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: 15px;
-      }
-      .info {
-        font-size: 13px;
-        display: inline-block;
-        padding-left: 1.2em;
-        padding-right: 1.2em;
-      }
-      .order{
-        width: 100%;
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-      }
-      .place-order{
-        font-size: 1em;
-        width: 100%;
-        color: white;
-        background-color: rgb(44, 44, 85);
-        border: none;
-        text-align: center;
-        padding: 10px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-      }
-  }
+}

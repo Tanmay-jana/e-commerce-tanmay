@@ -37,19 +37,74 @@
       <div class="acc-info">
         <p>Account Information</p>
         <form>
-          <input type="email" name="email" placeholder="Email" />
+          <div class="form">
+            <input
+              type="text"
+              name="Email"
+              id="Email"
+              autocomplete="off"
+              required
+            />
+            <label for="Email">Email</label>
+          </div>
           <br />
-          <input type="tel" name="phno" placeholder="Phone Number" />
+          <div>
+            <input
+              type="tel"
+              name="phno"
+              id="phno"
+              autocomplete="off"
+              required
+            />
+            <label for="phno">Phone Number</label>
+          </div>
           <br />
         </form>
         <p>Shipping Address</p>
         <form>
-          <input type="text" name="Address" placeholder="Address" />
+          <div>
+            <input
+              type="text"
+              name="Address"
+              id="address"
+              autocomplete="off"
+              required
+            />
+            <label for="address">Address</label>
+          </div>
           <br />
-          <input type="text" name="city" placeholder="City" />
+          <div>
+            <input
+              type="text"
+              name="city"
+              id="City"
+              autocomplete="off"
+              required
+            />
+            <label for="City">City</label>
+          </div>
           <div class="state-zip">
-            <input type="text" name="state" placeholder="State/Province" />
-            <input type="text" name="zip" placeholder="ZIP/Postal Code" />
+            <div>
+              <input
+                type="text"
+                name="state"
+                id="State"
+                autocomplete="off"
+                required
+              />
+              <label for="State">State</label>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="zip"
+                id="ZIP"
+                autocomplete="off"
+                required
+              />
+
+              <label for="ZIP">ZIP</label>
+            </div>
           </div>
         </form>
         <p>Country</p>
@@ -61,9 +116,27 @@
       <div class="Payment-info">
         <p>Payment Method</p>
         <form>
-          <input type="text" name="name" placeholder="Cardholder Name" />
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="Name"
+              autocomplete="off"
+              required
+            />
+            <label for="Name">Name</label>
+          </div>
           <br />
-          <input type="text" name="name" placeholder="Card Number" />
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="Cardno"
+              autocomplete="off"
+              required
+            />
+            <label for="Cardno">Card Number</label>
+          </div>
           <br />
           <p>Expiry</p>
           <div class="date">
@@ -103,7 +176,17 @@
               <option value="2001">2001</option>
               <option value="2000">2000</option>
             </select>
-            <input class="cvv" type="text" name="cvv" placeholder="CVV" />
+            <div id="cv">
+              <input
+                class="cvv"
+                type="text"
+                name="cvv"
+                id="CVV"
+                autocomplete="off"
+                required
+              />
+              <label for="CVV">CVV</label>
+            </div>
           </div>
         </form>
         <div class="order-summary">
